@@ -25,7 +25,7 @@ body {
 header {
   background: #d50000;
   color: white;
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center;
 }
 header h1 {
@@ -45,12 +45,12 @@ header p {
 }
 
 .logo {
-  height: 80px; /* Ajusta según tu diseño */
+  height: 60px; /* Ajusta según tu diseño */
   width: auto;  /* Mantiene proporciones */
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .logo {
-    height: 50px;
+    height: 60px;
   }
 }
 
@@ -155,4 +155,5 @@ footer {
     flex-direction: column;
   }
 }
+
 
