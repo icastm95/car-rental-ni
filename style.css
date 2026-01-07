@@ -39,7 +39,9 @@ header {
 
 .logo {
   height: 80px;   /* ajusta según tu diseño */
-  width: auto;
+  width: 80px;
+  border-radius: 50%; /* hace el círculo */
+  object-fit: cover;  /* recorta la imagen si no es cuadrada */
   display: block;
 }
 
@@ -164,3 +166,4 @@ footer {
     flex-direction: column;
   }
 }
+
