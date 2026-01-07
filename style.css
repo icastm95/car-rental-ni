@@ -42,6 +42,7 @@ header {
   width: 80px;
   border-radius: 50%; /* hace el círculo */
   object-fit: cover;  /* recorta la imagen si no es cuadrada */
+   border: 3px solid white; /* borde blanco alrededor del logo */
   display: block;
 }
 
@@ -166,4 +167,5 @@ footer {
     flex-direction: column;
   }
 }
+
 
