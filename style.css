@@ -1,0 +1,139 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background: #d50000;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.2em;
+}
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+  background: #b71c1c;
+}
+nav .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav a {
+  color: white;
+  margin: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ffccbc;
+}
+
+/* Autos */
+section#autos {
+  padding: 40px 0;
+}
+section#autos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.car {
+  background: white;
+  border-radius: 15px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.car:hover {
+  transform: translateY(-5px);
+}
+.car img {
+  width: 100%;
+  border-radius: 10px;
+}
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: #d50000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.button:hover {
+  background: #b71c1c;
+  transform: scale(1.05);
+}
+
+/* Reservas */
+section#reserva {
+  padding: 50px 0;
+  background: #f0f0f0;
+}
+section#reserva h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contacto */
+section#contacto {
+  padding: 50px 0;
+}
+section#contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .car-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav .container {
+    flex-direction: column;
+  }
+}
