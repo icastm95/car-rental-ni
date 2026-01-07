@@ -114,6 +114,25 @@ section#autos h2 {
   background: #b71c1c;
   transform: scale(1.05);
 }
+/* Requisitos */
+section#requisitos {
+  padding: 50px 0;
+  background: #f0f0f0;
+}
+
+section#requisitos h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.requisitos-list {
+  list-style-type: disc; /* o puedes usar check marks con content */
+  max-width: 600px;
+  margin: auto;
+  padding-left: 20px;
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
 
 /* Reservas */
 section#reserva {
@@ -167,5 +186,6 @@ footer {
     flex-direction: column;
   }
 }
+
 
 
