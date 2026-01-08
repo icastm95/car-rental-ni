@@ -345,3 +345,51 @@ footer {
     flex-direction: column;
   }
 }
+
+/* =====================
+   Footer Premium
+===================== */
+footer {
+  background: #000;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-title {
+  color: var(--gold-main);
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95em;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(1.1);
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+}
+
+.footer-copy p {
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
