@@ -389,6 +389,19 @@ footer {
 }
 
 
+/* Precio personalizado (sin número) */
+.price-custom {
+  font-size: 1.3em;
+  color: #333;
+  font-weight: 600;
+}
+
+.price-custom span {
+  color: #666;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
 
 
 
