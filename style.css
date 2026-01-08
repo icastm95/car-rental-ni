@@ -410,6 +410,16 @@ footer {
   font-weight: normal;
 }
 
+.social-icon img {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+}
+
 
 
 
