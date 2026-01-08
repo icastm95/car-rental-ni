@@ -402,6 +402,14 @@ footer {
   font-weight: normal;
 }
 
+/* Texto para servicios sin precio fijo */
+.price-note {
+  font-size: 1em;
+  color: #666;
+  margin: 12px 0;
+  font-weight: normal;
+}
+
 
 
 
