@@ -219,8 +219,12 @@ nav a:hover {
 
 .car:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.7); /* sombra más intensa al pasar el mouse */
+  box-shadow: 
+    0 15px 40px rgba(0,0,0,0.7), /* sombra negra más intensa */
+    0 0 15px 3px rgba(201,162,77,0.5); /* resplandor dorado suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .car img {
   width: 100%;
@@ -534,6 +538,7 @@ footer {
   background: var(--gold-dark);
   transform: translateY(-2px);
 }
+
 
 
 
