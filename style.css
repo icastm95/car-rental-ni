@@ -593,6 +593,17 @@ footer {
   font-size: 0.95em;
 }
 
+@media (max-width: 768px) {
+  .car-grid {
+    justify-items: center; /* centra los cards dentro del grid */
+  }
+
+  .car {
+    width: 90%; /* o un valor máximo que quieras */
+    max-width: 300px; /* opcional, para que no se estiren demasiado */
+  }
+}
+
 
 
 
