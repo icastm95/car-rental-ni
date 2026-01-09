@@ -6,13 +6,14 @@
   <title>Renta de Autos Nicaragua</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  <a href="https://wa.me/50589318989?text=Hola%20quiero%20información%20sobre%20alquiler%20de%20autos"
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/50589318989?text=Hola%20quiero%20información%20sobre%20alquiler%20de%20autos"
    class="whatsapp-float"
    target="_blank"
    aria-label="WhatsApp">
   <img src="images/whatsapp.svg" alt="WhatsApp" style="width: 32px; height: 32px;">
 </a>
-
 
 <body>
  <header>
@@ -27,19 +28,17 @@
   </div>
 </header>
 
+<nav>
+  <div class="container">
+    <a href="#inicio">Inicio</a>
+    <a href="#autos">Autos</a>
+    <a href="#requisitos">Requisitos</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
 
-
-  <nav>
-    <div class="container">
-      <a href="#inicio">Inicio</a>
-      <a href="#autos">Autos</a>
-      <a href="#requisitos">Requisitos</a>
-      <a href="#beneficios">Beneficios</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-  </nav>
-
-  <section id="inicio">
+<section id="inicio">
   <div class="container hero">
     <div class="hero-text">
       <h2>Más que autos,<br>entregamos libertad.</h2>
@@ -53,132 +52,103 @@
   </div>
 </section>
 
-  <section id="autos">
-    <div class="container">
-      <h2>Autos Disponibles</h2>
-      <div class="car-grid">
-        
-        <div class="car">
-  <img src="images/car.jpg" alt="Toyota Agya">
-  <h3>Toyota Agya</h3>
-
-  <ul class="car-features">
-    <li>🚗 Económico</li>
-    <li>👥 5 pasajeros</li>
-    <li>⛽ Gasolina</li>
-  </ul>
-
-  <p class="price">$35 <span>/ día</span></p>
-
-  <a href="https://wa.me/50589318989?text=Quiero%20reservar%20Toyota%20Agya"
-     class="button">
-     Reservar WhatsApp
-  </a>
-</div>
-
-<div class="car">
-  <img src="images/hilux.jpg" alt="Toyota Hilux">
-  <h3>Toyota Hilux</h3>
-
-  <ul class="car-features">
-    <li>🚗 Económico</li>
-    <li>👥 5 pasajeros</li>
-    <li>⛽ Gasolina</li>
-  </ul>
-
-  <p class="price">$85 <span>/ día</span></p>
-
-  <a href="https://wa.me/50589318989?text=Quiero%20reservar%20Toyota%20Hilux"
-     class="button">
-     Reservar WhatsApp
-  </a>
-</div>
-        
-<div class="car">
-  <img src="images/van.jpg" alt="Van Familiar">
-  <h3>Van Familiar</h3>
-
-  <ul class="car-features">
-    <li>🚗 Económico</li>
-    <li>👥 15 pasajeros</li>
-    <li>⛽ Gasolina</li>
-  </ul>
-
-  <p class="price-note">
-  Consultar precio según viaje
-</p>
-
-
-  <a href="https://wa.me/50589318989?text=Quiero%20reservar%20Van%20Familiar"
-     class="button">
-     Reservar WhatsApp
-  </a>
-</div>
-
+<section id="autos">
+  <div class="container">
+    <h2>Autos Disponibles</h2>
+    <div class="car-grid">
+      <!-- Toyota Agya -->
       <div class="car">
-  <img src="images/car2.jpg" alt="Auto Lujo">
-  <h3>Toyota Yaris</h3>
+        <img src="images/car.jpg" alt="Toyota Agya">
+        <h3>Toyota Agya</h3>
+        <ul class="car-features">
+          <li>🚗 Económico</li>
+          <li>👥 5 pasajeros</li>
+          <li>⛽ Gasolina</li>
+        </ul>
+        <p class="price">$35 <span>/ día</span></p>
+        <a href="https://wa.me/50589318989?text=Quiero%20reservar%20Toyota%20Agya" class="button">Reservar WhatsApp</a>
+      </div>
 
-  <ul class="car-features">
-    <li>🚗 Económico</li>
-    <li>👥 5 pasajeros</li>
-    <li>⛽ Gasolina</li>
-  </ul>
+      <!-- Toyota Hilux -->
+      <div class="car">
+        <img src="images/hilux.jpg" alt="Toyota Hilux">
+        <h3>Toyota Hilux</h3>
+        <ul class="car-features">
+          <li>🚗 Económico</li>
+          <li>👥 5 pasajeros</li>
+          <li>⛽ Gasolina</li>
+        </ul>
+        <p class="price">$85 <span>/ día</span></p>
+        <a href="https://wa.me/50589318989?text=Quiero%20reservar%20Toyota%20Hilux" class="button">Reservar WhatsApp</a>
+      </div>
 
-  <p class="price">$45 <span>/ día</span></p>
+      <!-- Van Familiar -->
+      <div class="car">
+        <img src="images/van.jpg" alt="Van Familiar">
+        <h3>Van Familiar</h3>
+        <ul class="car-features">
+          <li>🚗 Económico</li>
+          <li>👥 15 pasajeros</li>
+          <li>⛽ Gasolina</li>
+        </ul>
+        <p class="price-note">Consultar precio según viaje</p>
+        <a href="https://wa.me/50589318989?text=Quiero%20reservar%20Van%20Familiar" class="button">Reservar WhatsApp</a>
+      </div>
 
-  <a href="https://wa.me/50589318989?text=Quiero%20reservar%20Toyota%20Yaris"
-     class="button">
-     Reservar WhatsApp
-  </a>
-</div>
-
+      <!-- Toyota Yaris -->
+      <div class="car">
+        <img src="images/car2.jpg" alt="Auto Lujo">
+        <h3>Toyota Yaris</h3>
+        <ul class="car-features">
+          <li>🚗 Económico</li>
+          <li>👥 5 pasajeros</li>
+          <li>⛽ Gasolina</li>
+        </ul>
+        <p class="price">$45 <span>/ día</span></p>
+        <a href="https://wa.me/50589318989?text=Quiero%20reservar%20Toyota%20Yaris" class="button">Reservar WhatsApp</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="requisitos">
+<section id="requisitos">
   <div class="container">
     <h2>Requisitos para Alquilar</h2>
     <ul class="requisitos-list">
-  <li>🗓️ Mínimo 2 días de alquiler</li>
-  <li>🆔 Documento de identidad (cédula o pasaporte)</li>
-  <li>🚗 Licencia de conducir vigente</li>
-  <li>💰 Depósito y renta anticipada</li>
-</ul>
-
+      <li>🗓️ Mínimo 2 días de alquiler</li>
+      <li>🆔 Documento de identidad (cédula o pasaporte)</li>
+      <li>🚗 Licencia de conducir vigente</li>
+      <li>💰 Depósito y renta anticipada</li>
+    </ul>
   </div>
 </section>
 
-  <section id="beneficios">
+<section id="beneficios">
   <div class="container">
     <h2>Beneficios</h2>
     <ul class="beneficios-list">
-  <li>🛋️ Comodidad garantizada</li>
-  <li>🔧 Autos impecables y mecánicamente perfectos</li>
-  <li>🏆 Entrega VIP a tu ubicación</li>
-</ul>
-
+      <li>🛋️ Comodidad garantizada</li>
+      <li>🔧 Autos impecables y mecánicamente perfectos</li>
+      <li>🏆 Entrega VIP a tu ubicación</li>
+    </ul>
   </div>
 </section>
-  
-  <section id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>📍 Nicaragua</p>
-      <p>📱 WhatsApp: <a href="https://wa.me/50589318989">+50589318989</a></p>
-      <p>✉ Email: cs@ctglobal-services.com</p>
-    </div>
-  </section>
 
-  <footer>
+<section id="contacto">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>📍 Nicaragua</p>
+    <p>📱 WhatsApp: <a href="https://wa.me/50589318989">+50589318989</a></p>
+    <p>✉ Email: cs@ctglobal-services.com</p>
+  </div>
+</section>
+
+<footer>
   <div class="container footer-content">
 
     <div class="footer-brand">
       <p class="footer-title">CT Global Rent A Car Nicaragua</p>
-      <p class="footer-subtitle">
-        Más que autos, entregamos libertad.
-      </p>
+      <p class="footer-subtitle">Más que autos, entregamos libertad.</p>
     </div>
 
     <div class="footer-social">
@@ -195,6 +165,20 @@
          class="social-icon">
         <img src="images/whatsapp.svg" alt="WhatsApp">
       </a>
+
+      <a href="https://www.instagram.com/tu_usuario"
+         target="_blank"
+         aria-label="Instagram"
+         class="social-icon">
+        <img src="images/instagram.svg" alt="Instagram">
+      </a>
+
+      <a href="https://www.tiktok.com/@tu_usuario"
+         target="_blank"
+         aria-label="TikTok"
+         class="social-icon">
+        <img src="images/tiktok.svg" alt="TikTok">
+      </a>
     </div>
 
     <div class="footer-copy">
@@ -204,41 +188,6 @@
   </div>
 </footer>
 
-
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
