@@ -201,17 +201,19 @@ nav a:hover {
 }
 
 .car-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
+  justify-items: center;
 }
+
 
 .car {
   background: var(--black-soft);
   color: var(--text-light);
   border-radius: 18px;
-  width: 300px;
+  width: 100%;          /* ⬅️ CLAVE */
+  max-width: 280px;     /* controla el tamaño visual */
   overflow: hidden;
   box-shadow: 0 12px 35px rgba(0,0,0,0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -572,6 +574,7 @@ footer {
     0 18px 45px rgba(0,0,0,0.7),
     0 0 18px rgba(201,162,77,0.4);
 }
+
 
 
 
