@@ -254,13 +254,21 @@ nav a:hover {
 /* =====================
    Requisitos / Beneficios
 ===================== */
-#requisitos,
-#beneficios {
-  background: #fff;
+/* Requisitos para alquilar */
+#requisitos {
+  background: #fff; /* blanco */
   color: #333;
   padding: 60px 0;
 }
 
+/* Beneficios */
+#beneficios {
+  background: #f9f9f9; /* gris muy suave */
+  color: #333;
+  padding: 60px 0;
+}
+
+/* Listas dentro de cada sección */
 .requisitos-list,
 .beneficios-list {
   max-width: 600px;
@@ -268,6 +276,7 @@ nav a:hover {
   font-size: 1.1em;
   line-height: 1.8em;
 }
+
 
 /* =====================
    Contacto
@@ -507,6 +516,7 @@ footer {
   display: block;       /* ya no inline-block */
   margin: 15px auto 0;  /* margen superior para separarlo, auto a los lados centra */
 }
+
 
 
 
