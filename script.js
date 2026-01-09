@@ -25,9 +25,16 @@ function enviarWhatsApp() {
   }
 
   const mensaje = `Hola, quiero reservar el auto ${autoSeleccionado} del ${inicio} al ${fin}.`;
-  const telefono = "505XXXXXXXX"; // TU número real aquí
+  const telefono = "50589318989"; // 
   const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 
   window.open(url, "_blank");
   cerrarModal();
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById("reservaModal");
+  if (event.target == modal) {
+    cerrarModal();
+  }
 }
