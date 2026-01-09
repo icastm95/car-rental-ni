@@ -211,7 +211,6 @@ nav a:hover {
   padding: 18px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   text-align: center;
 }
 
 .car:hover {
@@ -502,6 +501,11 @@ footer {
 
 .modal-actions button:last-child:hover {
   background: #1ebe5d;
+}
+
+.car .button {
+  display: block;       /* ya no inline-block */
+  margin: 15px auto 0;  /* margen superior para separarlo, auto a los lados centra */
 }
 
 
