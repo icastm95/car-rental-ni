@@ -15,6 +15,24 @@
   <img src="images/whatsapp.svg" alt="WhatsApp" style="width: 32px; height: 32px;">
 </a>
 
+  <div id="reservaModal" class="modal">
+  <div class="modal-content">
+    <h3>Selecciona tus fechas</h3>
+
+    <label>Fecha de inicio</label>
+    <input type="date" id="fechaInicio">
+
+    <label>Fecha de devolución</label>
+    <input type="date" id="fechaFin">
+
+    <div class="modal-actions">
+      <button onclick="cerrarModal()">Cancelar</button>
+      <button onclick="enviarWhatsApp()">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+  
 <body>
  <header>
   <div class="container logo-container">
@@ -191,5 +209,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
