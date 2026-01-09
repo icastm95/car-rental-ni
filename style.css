@@ -58,14 +58,14 @@ header {
 }
 
 .logo-text h1 {
-  font-family: 'Harmattan', cursive;
+  font-family: 'Crimson Pro', cursive;
   font-size: 2.5em; /* ajusta según necesites */
   color: var(--gold-main);
   letter-spacing: 1px;
 }
 
 .logo-text p {
-  font-family: 'Harmattan', cursive;
+  font-family: 'Crimson Pro', cursive;
   font-size: 1.2em;
   color: var(--text-muted);
 }
@@ -519,6 +519,7 @@ footer {
   display: block;       /* ya no inline-block */
   margin: 15px auto 0;  /* margen superior para separarlo, auto a los lados centra */
 }
+
 
 
 
