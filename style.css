@@ -574,6 +574,25 @@ footer {
     0 0 18px rgba(201,162,77,0.4);
 }
 
+.car-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.car-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95em;
+  color: var(--text-light);
+}
+
+.car-features i {
+  color: var(--gold-main);
+  font-size: 0.95em;
+}
+
 
 
 
