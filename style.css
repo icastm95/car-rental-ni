@@ -335,8 +335,6 @@ footer {
   filter: none;  /* o puedes usar filter: brightness(1.2); */
 }
 
-}
-
 
 /* =====================
    Responsive
@@ -433,5 +431,6 @@ footer {
     gap: 20px;
   }
 }
+
 
 
