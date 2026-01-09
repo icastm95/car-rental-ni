@@ -622,6 +622,77 @@ footer {
   }
 }
 
+.requisitos-section {
+  background-color: #0a0a0a; /* fondo negro */
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.requisitos-title {
+  color: #b68d40; /* dorado */
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.requisitos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.requisito-card {
+  background-color: rgba(182, 141, 64, 0.15); /* dorado suave */
+  border-radius: 18px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  color: #0a0a0a; /* texto negro en las cards */
+  transition: box-shadow 0.3s ease;
+}
+
+.requisito-card:hover {
+  box-shadow: 0 12px 30px rgba(182, 141, 64, 0.7);
+}
+
+.requisito-card i {
+  color: #b68d40; /* iconos dorados */
+  font-size: 2rem;
+}
+
+.requisito-card h3 {
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.requisito-card p {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+  .requisitos-grid {
+    grid-template-columns: 1fr;
+  }
+  .requisitos-title {
+    text-align: center;
+  }
+  .requisito-card {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 
 
 
