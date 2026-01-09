@@ -202,9 +202,8 @@ nav a:hover {
 
 .car-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
-  justify-items: center;
 }
 
 
@@ -574,6 +573,7 @@ footer {
     0 18px 45px rgba(0,0,0,0.7),
     0 0 18px rgba(201,162,77,0.4);
 }
+
 
 
 
