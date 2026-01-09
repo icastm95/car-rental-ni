@@ -211,8 +211,8 @@ nav a:hover {
   background: var(--black-soft);
   color: var(--text-light);
   border-radius: 18px;
-  width: 300px; /* más ancho */
-  overflow: hidden; /* CLAVE para que la imagen no se salga */
+  width: 300px;
+  overflow: hidden;
   box-shadow: 0 12px 35px rgba(0,0,0,0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -542,7 +542,7 @@ footer {
 .car-image {
   width: 100%;
   height: 190px;
-  overflow: hidden; /* mantiene el zoom dentro */
+  overflow: hidden;
 }
 
 .car-image img {
@@ -572,6 +572,7 @@ footer {
     0 18px 45px rgba(0,0,0,0.7),
     0 0 18px rgba(201,162,77,0.4);
 }
+
 
 
 
