@@ -189,14 +189,14 @@ nav a:hover {
    Autos
 ===================== */
 #autos {
-  background: var(--bg-light);
-  color: #333;
+  background: var(--black-soft);
+  color: var(--text-light);
   padding: 60px 0;
 }
 
 #autos h2 {
   text-align: center;
-  color: #000;
+  color: var(--gold-main);
   margin-bottom: 40px;
 }
 
@@ -208,7 +208,7 @@ nav a:hover {
 
 
 .car {
-  background: var(--black-soft);
+  background: #000;
   color: var(--text-light);
   border-radius: 18px;
   width: 100%;          /* ⬅️ CLAVE */
@@ -573,6 +573,7 @@ footer {
     0 18px 45px rgba(0,0,0,0.7),
     0 0 18px rgba(201,162,77,0.4);
 }
+
 
 
 
