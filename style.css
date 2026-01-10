@@ -1,121 +1,788 @@
 /* =====================
-   Variables de color
+  Variables de color
 ===================== */
 :root {
-  --black-main: #0f0f0f;
-  --black-soft: #1a1a1a;
-  --gold-main: #c9a24d;
-  --gold-dark: #a8842c;
-  --text-light: #f5f5f5;
-  --text-muted: #b5b5b5;
-  --bg-light: #f2f2f2;
+--black-main: #0f0f0f;
+--black-soft: #1a1a1a;
+--gold-main: #c9a24d;
+--gold-dark: #a8842c;
+--text-light: #f5f5f5;
+--text-muted: #b5b5b5;
+--bg-light: #f2f2f2;
 }
 
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 /* General */
 body {
-  font-family: 'Arial', sans-serif;
-  background: var(--black-main);
-  color: var(--text-light);
-  line-height: 1.6;
+font-family: 'Arial', sans-serif;
+background: var(--black-main);
+color: var(--text-light);
+line-height: 1.6;
 }
 
 /* Container */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 0;
+width: 90%;
+max-width: 1200px;
+margin: auto;
+padding: 20px 0;
 }
 
 /* =====================
-   Header
+  Header
 ===================== */
 header {
-  background: var(--black-soft);
-  padding: 20px 0;
+background: var(--black-soft);
+padding: 20px 0;
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: center;
+display: flex;
+align-items: center;
+gap: 20px;
+justify-content: center;
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--gold-main);
+width: 80px;
+height: 80px;
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid var(--gold-main);
 }
 
 .logo-text h1 {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 2.5em;
-  color: var(--gold-main);
+font-family: 'Kaushan Script', cursive;
+font-size: 2.5em; /* ajusta según necesites */
+color: var(--gold-main);
+letter-spacing: 1px;
 }
 
 .logo-text p {
-  font-family: 'Kaushan Script', cursive;
-  font-size: 1.2em;
-  color: var(--text-muted);
+font-family: 'Kaushan Script', cursive;
+font-size: 1.2em;
+color: var(--text-muted);
 }
 
 /* =====================
-   Navigation
+  Navigation
 ===================== */
 nav {
-  background: #000;
+background: #000;
 }
 
 nav .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
 }
 
 nav a {
-  color: var(--gold-main);
-  margin: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
+color: var(--gold-main);
+margin: 10px 20px;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
 }
 
 nav a:hover {
-  color: var(--gold-dark);
+color: var(--gold-dark);
 }
 
 /* =====================
-   Hero
+  Hero / Inicio
 ===================== */
-.hero-section {
-  background: linear-gradient(135deg, #000, #1a1a1a);
-  padding: 100px 0;
+#inicio {
+background: linear-gradient(135deg, #000, #1a1a1a);
+padding: 80px 0;
 }
 
 .hero {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 40px;
+}
+
+.hero-text {
+flex: 1;
+animation: fadeLeft 1s ease-out forwards;
+}
+
+.hero-text h2 {
+font-size: 3em;
+color: var(--gold-main);
+margin-bottom: 20px;
+font-weight: 800;
+line-height: 1.2;
+}
+
+.hero-text p {
+font-size: 1.2em;
+color: var(--text-muted);
+margin-bottom: 25px;
+}
+
+.hero-image {
+flex: 1;
+text-align: right;
+animation: fadeRight 1.2s ease-out forwards;
+}
+
+.hero-image img {
+max-width: 100%;
+border-radius: 20px;
+box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* =====================
+  Animaciones Hero
+===================== */
+@keyframes fadeLeft {
+from {
+opacity: 0;
+transform: translateX(-40px);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+@keyframes fadeRight {
+from {
+opacity: 0;
+transform: translateX(40px);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+/* =====================
+  Botones
+===================== */
+.button {
+display: inline-block;
+padding: 12px 22px;
+background: var(--gold-main);
+color: #000;
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+
+.button:hover {
+background: var(--gold-dark);
+transform: translateY(-2px);
+}
+
+/* =====================
+  Autos
+===================== */
+#autos {
+background: var(--black-soft);
+color: var(--text-light);
+padding: 60px 0;
+}
+
+#autos h2 {
+text-align: center;
+color: var(--gold-main);
+margin-bottom: 40px;
+}
+
+.car-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 25px;
+}
+
+
+.car {
+background: #000;
+color: var(--text-light);
+border-radius: 18px;
+width: 100%;          /* ⬅️ CLAVE */
+max-width: 280px;     /* controla el tamaño visual */
+overflow: hidden;
+box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car:hover {
+transform: translateY(-8px);
+box-shadow: 
+0 15px 40px rgba(0,0,0,0.7), /* sombra negra más intensa */
+0 0 15px 3px rgba(201,162,77,0.5); /* resplandor dorado suave */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.car img {
+width: 100%;
+border-radius: 12px;
+}
+
+/* Títulos y características */
+.car h3 {
+margin: 12px 0;
+color: var(--gold-main); /* títulos en dorado */
+}
+
+.car-features {
+list-style: none;
+font-size: 0.95em;
+margin-bottom: 10px;
+color: var(--text-light); /* íconos y texto de características en claro */
+}
+
+/* Precios */
+.price {
+font-size: 1.6em;
+font-weight: bold;
+color: var(--gold-main); /* dorado sigue destacando */
+}
+
+.price span {
+font-size: 0.6em;
+color: var(--text-light); /* /día en claro */
+}
+
+.price-note {
+font-size: 1em;
+color: var(--text-muted); /* notas menos importantes */
+}
+
+/* =====================
+  Requisitos / Beneficios
+===================== */
+/* Requisitos para alquilar */
+#requisitos {
+background: #fff; /* blanco */
+color: #333;
+padding: 60px 0;
+}
+
+/* Beneficios */
+#beneficios {
+background: #f9f9f9; /* gris muy suave */
+color: #333;
+padding: 60px 0;
+}
+
+/* Listas dentro de cada sección */
+.requisitos-list,
+.beneficios-list {
+max-width: 600px;
+margin: auto;
+font-size: 1.1em;
+line-height: 1.8em;
+}
+
+
+/* =====================
+  Contacto
+===================== */
+#contacto {
+background: var(--black-soft);
+padding: 50px 0;
+text-align: center;
+}
+
+#contacto h2 {
+color: var(--gold-main);
+}
+
+#contacto p {
+color: var(--text-muted);
+}
+
+/* =====================
+  Footer
+===================== */
+footer {
+background: #000;
+padding: 25px 0;
+text-align: center;
+}
+
+.footer-content p {
+color: var(--text-muted);
+}
+
+.social-icon img {
+width: 26px;
+margin: 0 10px;
+transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+transform: scale(1.2);
+}
+
+/* =====================
+  WhatsApp Floating
+===================== */
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25d366;
+border-radius: 50%;
+width: 60px;
+height: 60px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.whatsapp-float img {
+width: 32px;   /* ajusta según se vea bien */
+height: 32px;
+display: block;
+margin: auto;
+filter: brightness(0) invert(1);  /* o puedes usar filter: brightness(1.2); */
+}
+
+
+/* =====================
+  Responsive
+===================== */
+@media (max-width: 768px) {
+.hero {
+flex-direction: column;
+text-align: center;
+}
+
+.hero-image {
+text-align: center;
+}
+
+.logo-container {
+flex-direction: column;
+}
+}
+
+/* =====================
+  Footer Premium
+===================== */
+footer {
+background: #000;
+padding: 40px 0;
+}
+
+.footer-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+.footer-title {
+color: var(--gold-main);
+font-size: 1.2em;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+.footer-subtitle {
+color: var(--text-muted);
+font-size: 0.95em;
+}
+
+.footer-social {
+display: flex;
+gap: 20px;
+}
+
+.social-icon img {
+width: 28px;
+height: 28px;
+filter: brightness(1.1);
+transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+transform: scale(1.2);
+}
+
+.footer-copy p {
+font-size: 0.85em;
+color: var(--text-muted);
+}
+
+.requisitos-list li,
+.beneficios-list li {
+background: var(--bg-light);
+color: #333;
+padding: 15px 20px;
+margin: 12px 0;
+border-radius: 12px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.requisitos-list li:hover,
+.beneficios-list li:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+
+@media (min-width: 768px) {
+.requisitos-list,
+.beneficios-list {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+}
+}
+
+
+.modal {
+display: none;
+position: fixed;
+inset: 0;
+background: rgba(0,0,0,0.6);
+z-index: 2000;
+justify-content: center;
+align-items: center;
+}
+
+.modal-content {
+background: #fff;
+padding: 25px;
+border-radius: 12px;
+width: 90%;
+max-width: 400px;
+color: #333;
+}
+
+.modal-content h3 {
+margin-bottom: 15px;
+color: #000;
+}
+
+.modal-content label {
+display: block;
+margin-top: 10px;
+font-weight: bold;
+}
+
+.modal-content input {
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+}
+
+.modal-actions {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.modal-actions button {
+padding: 10px 15px;
+border: none;
+cursor: pointer;
+border-radius: 6px;
+}
+
+.modal-actions button:last-child {
+background: #25d366;
+color: #fff;
+}
+
+/* =====================
+  Modal WhatsApp Reservas
+===================== */
+.modal-actions button:first-child {
+background: #ccc;
+color: #000;
+}
+
+.modal-actions button:first-child:hover {
+background: #b5b5b5;
+}
+
+.modal-actions button:last-child:hover {
+background: #1ebe5d;
+}
+
+.car .button {
+display: block;
+margin: 15px auto 0;
+background: var(--gold-main);
+color: #000;
+border-radius: 6px;
+font-weight: bold;
+padding: 12px 22px;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.car .button:hover {
+background: var(--gold-dark);
+transform: translateY(-2px);
+}
+
+.car-image {
+width: 100%;
+height: 190px;
+overflow: hidden;
+}
+
+.car-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+
+/* SOLO la imagen hace zoom */
+.car:hover .car-image img {
+transform: scale(1.1);
+}
+
+.car-body {
+padding: 18px;
+}
+
+.car h3 {
+margin: 10px 0;
+color: var(--gold-main);
+}
+
+.car:hover {
+transform: translateY(-6px);
+box-shadow:
+0 18px 45px rgba(0,0,0,0.7),
+0 0 18px rgba(201,162,77,0.4);
+}
+
+.car-features {
+list-style: none;
+padding: 0;
+margin-bottom: 12px;
+}
+
+.car-features li {
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 0.95em;
+color: var(--text-light);
+}
+
+.car-features i {
+color: var(--gold-main);
+font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+.car-grid {
+justify-items: center; /* centra los cards dentro del grid */
+}
+
+.car {
+width: 90%; /* o un valor máximo que quieras */
+max-width: 300px; /* opcional, para que no se estiren demasiado */
+}
+}
+
+
+@media (max-width: 768px) {
+.logo-container {
+flex-direction: column;  /* pone logo y texto uno debajo del otro */
+align-items: center;     /* centra todo */
+text-align: center;      /* centra el texto */
+gap: 15px;               /* espacio entre logo y texto */
+}
+
+.logo-text h1 {
+font-size: 2em;  /* opcional: reducir tamaño en móvil */
+}
+
+.logo-text p {
+font-size: 1em;  /* opcional: reducir tamaño en móvil */
+}
+}
+
+.requisitos-section {
+background-color: #0a0a0a; /* fondo negro */
+color: #fff;
+padding: 60px 20px;
+}
+
+.requisitos-title {
+color: #b68d40; /* dorado */
+font-weight: 900;
+font-style: italic;
+font-size: 2.5rem;
+margin-bottom: 40px;
+text-align: left;
+}
+
+.requisitos-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 30px;
+}
+
+.requisito-card {
+background-color: rgba(182, 141, 64, 0.15); /* dorado suave */
+border-radius: 18px;
+padding: 25px 20px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+color: #0a0a0a; /* texto negro en las cards */
+transition: box-shadow 0.3s ease;
+}
+
+.requisito-card:hover {
+box-shadow: 0 12px 30px rgba(182, 141, 64, 0.7);
+}
+
+.requisito-card i {
+color: #b68d40; /* iconos dorados */
+font-size: 2rem;
+}
+
+.requisito-card h3 {
+font-weight: 900;
+font-size: 1.2rem;
+margin: 0;
+text-transform: uppercase;
+}
+
+.requisito-card p {
+font-weight: 600;
+font-size: 1rem;
+line-height: 1.4;
+margin: 0;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+.requisitos-grid {
+grid-template-columns: 1fr;
+}
+.requisitos-title {
+text-align: center;
+}
+.requisito-card {
+align-items: center;
+text-align: center;
+}
+}
+
+.beneficios-section {
+background-color: #0a0a0a; /* fondo negro */
+color: #fff;
+padding: 60px 20px;
+}
+
+.beneficios-title {
+color: #b68d40; /* dorado */
+font-weight: 900;
+font-style: italic;
+font-size: 2.5rem;
+margin-bottom: 40px;
+text-align: left;
+}
+
+.beneficios-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 30px;
+}
+
+.beneficio-card {
+background-color: rgba(182, 141, 64, 0.15); /* dorado suave */
+border-radius: 18px;
+padding: 25px 20px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+color: #0a0a0a; /* texto negro en las cards */
+transition: box-shadow 0.3s ease;
+}
+
+.beneficio-card:hover {
+box-shadow: 0 12px 30px rgba(182, 141, 64, 0.7);
+}
+
+.beneficio-card i {
+color: #b68d40; /* iconos dorados */
+font-size: 2rem;
+}
+
+.beneficio-card h3 {
+font-weight: 900;
+font-size: 1.2rem;
+margin: 0;
+text-transform: uppercase;
+}
+
+.beneficio-card p {
+font-weight: 600;
+font-size: 1rem;
+line-height: 1.4;
+margin: 0;
+}
+
+/* Responsive para móvil */
+@media (max-width: 768px) {
+.beneficios-grid {
+grid-template-columns: 1fr;
+}
+.beneficios-title {
+text-align: center;
+}
+.beneficio-card {
+align-items: center;
+text-align: center;
+}
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #000000, #1a1a1a); /* fondo negro con degradado sutil */
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
 }
 
 .hero-text h2 {
   font-family: 'Kaushan Script', cursive;
   font-size: 3rem;
-  color: #b68d40;
+  color: #b68d40; /* dorado */
+  line-height: 1.2;
+  font-weight: 900;
 }
 
 .hero-text h2 span {
   display: block;
-  color: #fff;
+  color: #fff; /* destacar la parte final */
   font-size: 3.5rem;
 }
 
@@ -123,185 +790,60 @@ nav a:hover {
   font-size: 1.3rem;
   color: #d4d4d4;
   margin: 20px 0 30px;
+  max-width: 500px;
 }
 
 .hero-text .button {
   background: linear-gradient(135deg, #b68d40, #c9a24d);
   color: #000;
   padding: 15px 30px;
+  font-size: 1.1rem;
   border-radius: 8px;
-}
-
-/* =====================
-   Botones
-===================== */
-.button {
-  display: inline-block;
-  padding: 12px 22px;
-  background: var(--gold-main);
-  color: #000;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(182,141,64,0.6);
   transition: all 0.3s ease;
 }
 
-.button:hover {
-  background: var(--gold-dark);
-  transform: translateY(-2px);
+.hero-text .button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(182,141,64,0.8);
 }
 
-/* =====================
-   Autos
-===================== */
-#autos {
-  background: var(--black-soft);
-  padding: 60px 0;
+.hero-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-#autos h2 {
-  text-align: center;
-  color: var(--gold-main);
-  margin-bottom: 40px;
+.hero-image img:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 30px 70px rgba(182,141,64,0.7);
 }
 
-.car-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-/* Card */
-.car {
-  background: #000;
-  border-radius: 18px;
-  max-width: 280px;
-  width: 100%;
-  overflow: hidden;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: translateZ(0);
-}
-
-.car:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 18px 45px rgba(0,0,0,0.7),
-    0 0 18px rgba(201,162,77,0.4);
-}
-
-/* Imagen */
-.car-image {
-  width: 100%;
-  height: 190px;
-  overflow: hidden;
-}
-
-.car-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  will-change: transform;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: transform 0.5s ease;
-}
-
-.car:hover .car-image img {
-  transform: scale(1.05);
-}
-
-/* Body */
-.car-body {
-  padding: 18px;
-}
-
-.car h3 {
-  margin: 10px 0;
-  color: var(--gold-main);
-}
-
-.car-features {
-  list-style: none;
-  margin-bottom: 12px;
-}
-
-.car-features li {
+/* Grid / Layout */
+.hero {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 0.95em;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-.car-features i {
-  color: var(--gold-main);
-}
-
-/* Precio */
-.price {
-  font-size: 1.6em;
-  font-weight: bold;
-  color: var(--gold-main);
-}
-
-.price span {
-  font-size: 0.6em;
-  color: var(--text-light);
-}
-
-/* =====================
-   Modal
-===================== */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: 2000;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  max-width: 400px;
-  width: 90%;
-  color: #333;
-}
-
-/* =====================
-   WhatsApp Float
-===================== */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* =====================
-   Responsive
-===================== */
+/* Responsive */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column-reverse;
     text-align: center;
   }
-
-  .car-grid {
-    justify-items: center;
+  .hero-text h2 {
+    font-size: 2.2rem;
   }
-
-  .logo-container {
-    flex-direction: column;
-    text-align: center;
+  .hero-text h2 span {
+    font-size: 2.5rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
   }
 }
+
+~
